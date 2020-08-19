@@ -1,0 +1,19 @@
+<mat-sidenav-container class="full">
+  <mat-sidenav #sidenav mode="side"
+               opened
+               class="main-drawer centered">
+    <button mat-button class="top-margin menu-btn" routerLinkActive="color-primary" routerLink="/#">
+      <mat-icon aria-label="Dashboard">dashboard</mat-icon>
+      <span class="menu-span">Dashboard</span>
+    </button>
+    <button mat-button class="top-margin menu-btn" routerLinkActive="color-primary" routerLink="/#">
+      <mat-icon aria-label="Transactions">storage</mat-icon>
+      <span class="menu-span">JSON Storage</span>
+    </button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content-holder">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

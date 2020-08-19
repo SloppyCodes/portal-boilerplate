@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Sloppy Solutions</h2>
+  <mat-card>
+    <form class="sign-in-form" (ngSubmit)="onLogIn(f)" #f="ngForm">
+      <mat-form-field class="full-width">
+        <input type="email" name="email" matInput placeholder="Email" ngModel>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input autocomplete="pwd" type="password" name="currentPass" matInput placeholder="Password" ngModel>
+      </mat-form-field>
+      <div>
+        <button mat-raised-button color="primary" type="submit">Sign In</button>
+        <button mat-raised-button color="primary" class="btn-left-margin" type="button" routerLink="/signUp">Sign up</button>
+        <button mat-raised-button color="accent" class="btn-left-margin" type="button" routerLink="/reset-password/">I forgot my password!</button>
+      </div>
+    </form>
+  </mat-card>
+</div>

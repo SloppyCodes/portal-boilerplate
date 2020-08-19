@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.full {
+  height: 100%;
+}
+
+.content-card {
+  margin-top: 1.5em;
+}
+
+.mat-drawer-container {
+  background-color: #F5F5F5;
+}
+
+.tools-lis {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.tool-href {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  vertical-align: top;
+  width: 260px;
+  cursor: pointer;
+}
+
+.card {
+  min-height: 15em;
+}
+
+.inner-card {
+  margin-top: 3em;
+}
+
+.icon {
+  font-size: 3em;
+  margin-top: 0.5em;
+}
+
+.centered {
+  text-align: center;
+}
+
+.left-aligned {
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.container-top-margin {
+  margin-top: 1%;
+}

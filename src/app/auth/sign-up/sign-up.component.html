@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>Eagle's eye sign up</h2>
+  <mat-card>
+    <form class="sign-in-form"[formGroup]="signUpForm" (ngSubmit)="onSignUp()">
+      <mat-form-field class="full-width">
+        <input type="text" formControlName="firstName" matInput placeholder="First name">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input type="text" formControlName="lastName" matInput placeholder="Last name">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="full-width">
+        <input type="email" formControlName="email" matInput placeholder="Email">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input type="email" formControlName="confirmEmail" matInput placeholder="Confirm email">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="full-width">
+        <input autocomplete="pwd" type="password" formControlName="pwd" matInput placeholder="Password">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input autocomplete="pwd" type="password" formControlName="confirmPwd" matInput placeholder="Confirm password">
+      </mat-form-field>
+      <br>
+      <button mat-raised-button color="primary" type="submit" routerLink="/signUp">Sign up</button>
+    </form>
+  </mat-card>
+</div>
